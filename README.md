@@ -14,5 +14,12 @@ Github api link serves 1000 repositories, each page contains 30 repositories as 
 
 - [x] `TSLint` : In project developement, as a team or particual, the code must be flexible, correct and follows the same rules, this library helps developers to manage and fix syntaxes and rules automatically.
 
+### How to use the project ?
+* Download the project
+* Open it with your prefered IDE (I used Visual Studio Code)
+* Run `npm install` command to install all packages and libraries used in the project
+* Run project on taping `ng s --open` command
+* Done !
+
 ### Image of project achieved
 ![Image of project](/Screenshot.png)
