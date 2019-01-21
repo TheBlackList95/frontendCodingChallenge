@@ -15,4 +15,4 @@ Github api link serves 1000 repositories, each page contains 30 repositories as 
 - [x] `TSLint` : In project developement, as a team or particual, the code must be flexible, correct and follows the same rules, this library helps developers to manage and fix syntaxes and rules automatically.
 
 ### Image of project achieved
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of project](/Screenshot.png)
