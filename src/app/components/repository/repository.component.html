@@ -1,0 +1,31 @@
+<h1 class="text-center mt-3 text-warning">Repositories List</h1>
+<hr />
+
+<!-- Make iteration of items received and display them on the page -->
+<div class="p-4"
+  infiniteScroll 
+  [infiniteScrollDistance]="2" 
+  [infiniteScrollThrottle]="30" 
+  (scrolled)="onScroll()"
+  [scrollWindow]="!isFinished">
+
+    <ul class="list-unstyled" *ngFor="let repo of reps">
+      <app-card 
+        avatar={{repo.avatar_url}}
+        name={{repo.name}} 
+        description={{repo.description}} 
+        stars="{{(repo.stargazers_count / 1000) | number:'1.2-2'}}k" 
+        issues="{{(repo.open_issues_count / 1000) | number:'1.2-2'}}k" 
+        interval="{{repo.name}}">
+      </app-card>    
+    </ul>
+</div>
+
+
+<!-- This div will be visible when user reached out the max of items -->
+<div *ngIf="isFinished">
+  <hr>
+  <div class="text-center text-database">
+    <h2>End of database... That's all folks!</h2>
+  </div>
+</div>

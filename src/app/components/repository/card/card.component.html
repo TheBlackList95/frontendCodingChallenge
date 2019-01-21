@@ -1,0 +1,22 @@
+<li class="media mt-4">
+  <img src="{{avatar}}" class="rounded mr-3" alt="owner avatar" [ngStyle]="customStyle">
+  
+  <div class="media-body">
+    <h3 class="mt-0 mb-1">{{name}}</h3>
+    <label class="d-block">{{description}}</label>
+    
+    <div class="d-flex flex-wrap bd-highlight mt-3">
+        <div class="bd-highlight pr-2">
+          <h5><span class="badge badge-info">Stars : {{stars}}</span></h5>
+        </div>
+        <div class="bd-highlight pr-2">
+            <h5><span class="badge badge-warning">Issues : {{issues}}</span></h5>
+        </div>
+        <div class="bd-highlight">
+          <small class="text-muted">Submitted 30 days ago by 
+            <b><i>{{interval}}</i></b>
+          </small>
+        </div>
+      </div>
+  </div>
+</li>
